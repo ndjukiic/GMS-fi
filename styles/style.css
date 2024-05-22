@@ -1,3 +1,25 @@
 body {
   font-family: "Teachers", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: gray;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin: auto 1rem;
 }
