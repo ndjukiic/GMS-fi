@@ -144,3 +144,38 @@ header ul li {
     font-size: 1.5rem;
   }
 }
+
+.industries {
+  height: 30vh;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.ind1 {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+}
+.ind2 {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.ind3 {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.ind4 {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+}
