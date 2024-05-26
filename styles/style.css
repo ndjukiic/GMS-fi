@@ -145,41 +145,23 @@ header ul li {
   }
 }
 
-.industries {
-  height: 70vh;
-}
-
 .industries-grid {
   display: grid;
-  grid-template-columns: auto auto;
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
 }
 
-.ind1 {
-  width: 100%;
-  height: 25rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
+.industries-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.ind2 {
-  width: 100%;
-  height: 25rem;
-  border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.ind3 {
-  width: 100%;
-  height: 25rem;
-  border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.ind4 {
-  width: 100%;
-  height: 25rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
-}
-.ind-padding {
-  padding-top: 12rem;
+.choose-us {
+  padding: 5rem 25rem;
 }
