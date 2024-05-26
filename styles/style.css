@@ -163,5 +163,31 @@ header ul li {
 }
 
 .choose-us {
+  background-color: rgb(20, 20, 20);
   padding: 5rem 25rem;
+}
+
+.abt-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.abt-item {
+  display: flex;
+  color: white;
+}
+
+.abt-item img {
+  margin: auto 0;
+  margin-right: 1rem;
+}
+
+.abt-item {
+  font-size: 1.25rem;
+}
+
+.reviews {
+  background-color: rgb(20, 20, 20);
+  text-align: center;
 }
