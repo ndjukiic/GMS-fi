@@ -230,12 +230,17 @@ header ul li {
   margin: 1rem 0;
 }
 
-.form-input input {
+.form-input input,
+select {
   margin-top: 0.25rem;
   padding: 0.75rem 0.5rem;
   border: 1px solid black;
   border-radius: 12px;
   box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.form-input select {
+  width: 30%;
 }
 
 .form-btn {
@@ -254,7 +259,9 @@ header ul li {
   box-shadow: 0 9px #999;
 }
 
-.form-btn:hover {background-color: #3e8e41}
+.form-btn:hover {
+  background-color: #3e8e41;
+}
 
 .form-btn:active {
   background-color: #3e8e41;
@@ -262,4 +269,36 @@ header ul li {
   transform: translateY(4px);
 }
 
+.contact {
+  background-color: rgb(20, 20, 20);
+  padding: 4rem 10rem;
+  color: white;
+  p {
+    margin: 0;
+  }
+}
 
+.contact-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-flexbox ul {
+  list-style: none;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.contact-nav {
+  margin: 0 5rem;
+}
+.contact-options {
+  margin: 0 5rem;
+}
+.contact-socials {
+  margin: 0 5rem;
+}
