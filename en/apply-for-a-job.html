@@ -11,9 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/en-style.css" />
   </head>
   <body>
-    <div class="backdrop" id="backdrop">
+    <div
+      class="backdrop"
+      id="backdrop"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('../styles/pexels-pixabay-159358.jpg');
+      "
+    >
       <h1>Apply to work for us!</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -23,13 +31,9 @@
       </p>
       <br />
       <div class="contact-btns">
-        <h3>+38261616161</h3>
-        <h3>test@testmail.com</h3>
-        <h3>Contact form</h3>
+        <h3>Submit an open job applications</h3>
+        <h3>See our positions</h3>
       </div>
-      <h3 style="font-size: 2.5rem">
-        Call us or fill out the form to order an employee!
-      </h3>
     </div>
     <header>
       <div class="logo" style="margin: 1.5rem 0 0 2rem">
@@ -37,9 +41,9 @@
       </div>
       <nav class="options">
         <ul>
-          <li>Order an employee</li>
+          <li><a href="./index-en.html">Order an employee</a></li>
           <li class="dropdown">
-            Apply for a job
+            <a href="./apply-for-a-job.html">Apply for a job </a>
             <!-- dodaj strelicu -->
             <div class="dropdown-content">
               <a href="">link 1</a>
@@ -78,5 +82,48 @@
         </ul>
       </nav>
     </header>
+
+    <section class="abt-employer">
+      <h1>GMS as an employer</h1>
+      <div class="abt-flex">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod alias
+          doloribus accusamus, quo eius similique dolorum laudantium omnis a in
+          dolores repellat totam magni, dolor iusto quae expedita, assumenda
+          ipsam?
+        </div>
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          animi recusandae illum aliquid dolore numquam nisi alias sapiente at
+          dolores nihil, et sunt quam id omnis culpa. Placeat, aperiam
+          perferendis.
+        </div>
+      </div>
+    </section>
+
+<!-- promijeni u employees -->
+
+    <section class="customers">
+      <h1 style="text-align: center">Experiences of employees</h1>
+
+      <div class="customer-card">
+        <img
+          width="100"
+          height="100"
+          src="https://img.icons8.com/ios/50/FFFFFF/user-male-circle--v1.png"
+          alt="user-male-circle--v1"
+        />
+        <i style="margin: 0.75rem 0"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet velit
+          porro non quas expedita possimus consectetur, dolorum minus quis harum
+          enim qui, error praesentium tempora, delectus alias laboriosam odit.
+          Suscipit.</i
+        >
+        <h2>John Doe</h2>
+        <p style="text-transform: uppercase; margin-top: -0.5rem">
+          United Nations Ltd., Uusikoroke, Finland
+        </p>
+      </div>
+    </section>
   </body>
 </html>

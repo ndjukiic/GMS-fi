@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html,
 body {
   max-width: 100%;
@@ -30,6 +34,10 @@ header ul {
 header ul li {
   margin: auto 1rem;
   padding: 0.5rem 0;
+}
+
+.options a {
+  color: white;
 }
 
 .dropdown {
@@ -301,4 +309,23 @@ select {
 }
 .contact-socials {
   margin: 0 5rem;
+}
+
+/* apply page */
+
+.abt-employer {
+  background-color: rgb(20, 20, 20);
+  color: White;
+}
+.abt-employer h1 {
+  margin: 0;
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 3rem;
+}
+
+.abt-flex {
+  padding: 3rem 15rem;
+  display: flex;
+  flex-direction: row;
 }
