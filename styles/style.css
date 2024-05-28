@@ -74,6 +74,15 @@ header ul li {
   background-color: #3e8e41;
 }
 
+.lang-flex{
+  display: flex;
+  flex-direction: row;
+  img{
+    margin: auto 0;
+    margin-right: 0.25rem;
+  }
+}
+
 .backdrop {
   display: flex;
   flex-direction: column;
