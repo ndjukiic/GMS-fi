@@ -74,10 +74,10 @@ header ul li {
   background-color: #3e8e41;
 }
 
-.lang-flex{
+.lang-flex {
   display: flex;
   flex-direction: row;
-  img{
+  img {
     margin: auto 0;
     margin-right: 0.25rem;
   }
@@ -260,10 +260,9 @@ select {
   width: 30%;
 }
 
-.form-checkboxes label{
+.form-checkboxes label {
   margin-right: 1rem;
 }
-
 
 .form-btn {
   width: 15%;
@@ -346,27 +345,44 @@ select {
 
 /* review */
 
-.reviews h1{
+.reviews h1 {
   margin: 0;
   padding-top: 4rem;
   color: white;
   font-size: 3rem;
 }
 
-.review-card{
+.review-card {
   background-color: rgba(20, 20, 20);
   padding: 4rem 30rem;
 }
 
-.review-flex{
+.review-flex {
   color: white;
   display: flex;
   flex-direction: row;
-  img{
+  img {
     margin: auto 0;
   }
 }
 
-.review-text{
+.review-text {
   margin-left: 2.5rem;
+}
+
+.form-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-review input {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  resize: none;
 }
