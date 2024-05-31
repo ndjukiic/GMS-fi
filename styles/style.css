@@ -198,16 +198,64 @@ header ul li {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: rgba(20, 20, 20);
 }
 
 .industries-item {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.industries-item a {
+}
+
+.industries-item a:hover {
+  background-color: #3e8e41;
+  color: white;
+  transition: 0.5s;
+}
+
+.industries-item img {
+  position: absolute;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.img-cnt {
+  position: absolute;
+  text-align: center;
+}
+
+.img-cnt h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.img-cnt a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 1rem 3rem;
+  border: 1px solid #3e8e41;
+  border-radius: 15px;
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.industries-item img:hover {
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 .choose-us {
