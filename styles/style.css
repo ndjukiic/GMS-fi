@@ -213,10 +213,9 @@ header ul li {
   align-items: center;
 }
 
-
 .industries-item a:hover {
-  background-color:#69e46d;
-  border-color:#69e46d;
+  background-color: #69e46d;
+  border-color: #69e46d;
   color: black;
   transition: 0.5s;
 }
@@ -315,7 +314,7 @@ header ul li {
   padding: 0 20rem;
 }
 
-.customer-card img{
+.customer-card img {
   margin-bottom: 2rem;
 }
 
@@ -323,7 +322,7 @@ header ul li {
   font-size: 1.25rem;
 }
 
-.card-text{
+.card-text {
   padding: 0 10rem;
 }
 
@@ -424,6 +423,7 @@ select {
   background-color: rgb(20, 20, 20);
   padding: 4rem 10rem;
   color: white;
+  border-top: 1px solid white;
   p {
     margin: 0;
   }
@@ -452,6 +452,23 @@ select {
 }
 .contact-socials {
   margin: 0 5rem;
+}
+
+.contact-list {
+  font-size: 1.25rem;
+}
+
+.contact-options p,
+.contact-socials p,
+#homepage-link {
+  font-size: 2.5rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-flexbox li{
+  margin: 0.5rem 0;
 }
 
 /* apply page */
