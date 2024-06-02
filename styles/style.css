@@ -213,12 +213,11 @@ header ul li {
   align-items: center;
 }
 
-.industries-item a {
-}
 
 .industries-item a:hover {
-  background-color: #3e8e41;
-  color: white;
+  background-color:#69e46d;
+  border-color:#69e46d;
+  color: black;
   transition: 0.5s;
 }
 
@@ -249,7 +248,7 @@ header ul li {
   border: 3px solid #3e8e41;
   border-radius: 15px;
   box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
-  background-color: transparent;
+  background-color: #3e8e41;
   transition: 0.5s;
 }
 
@@ -263,7 +262,7 @@ header ul li {
   padding: 5rem 25rem;
 }
 
-.choose-us h1{
+.choose-us h1 {
   text-align: center;
   color: white;
   font-size: 3rem;
@@ -300,13 +299,10 @@ header ul li {
   background-color: rgba(20, 20, 20);
 }
 
-.customers h1{
+.customers h1 {
   text-align: center;
   font-size: 2.5rem;
-}
-
-.customers i{
-  padding: 2rem 5rem;
+  padding-bottom: 3rem;
 }
 
 .customer-card {
@@ -317,6 +313,46 @@ header ul li {
   text-align: center;
   margin-top: 2.5rem;
   padding: 0 20rem;
+}
+
+.customer-card img{
+  margin-bottom: 2rem;
+}
+
+.customer-card i {
+  font-size: 1.25rem;
+}
+
+.card-text{
+  padding: 0 10rem;
+}
+
+.customer-card h2 {
+  margin-bottom: 0;
+}
+
+.customer-card p {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: #3e8e41;
+  font-weight: 600;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  font-size: 2.5rem;
+  margin-top: -15rem;
+}
+
+.prev {
+  left: 20%;
+}
+
+.next {
+  right: 20%;
 }
 
 .form-section {
