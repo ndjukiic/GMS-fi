@@ -593,3 +593,42 @@ select {
     margin-right: 0.5rem;
   }
 }
+
+/* jobs */
+
+.job-description {
+  background-color: rgba(20, 20, 20);
+  padding: 10rem 25rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.job-description h1 {
+  text-align: left;
+  font-size: 3rem;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-area {
+  padding-right: 7rem;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+.element-flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: #69e46d;
+  padding: 1rem 0;
+  border-bottom: 2px solid #69e46d;
+}
