@@ -181,8 +181,8 @@ header ul li {
 }
 
 .description {
-  padding: 4rem 10rem;
-  background-color: rgb(20, 20, 20);
+  padding: 7rem 10rem;
+  background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(20, 20, 20));
   color: white;
   text-align: center;
   h1 {
@@ -257,7 +257,7 @@ header ul li {
 }
 
 .choose-us {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(60, 60, 60);
   padding: 5rem 25rem;
 }
 
@@ -295,7 +295,7 @@ header ul li {
 .customers {
   color: white;
   padding: 5rem 2rem;
-  background-color: rgba(20, 20, 20);
+  background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(40, 40, 40));
 }
 
 .customers h1 {
@@ -355,7 +355,8 @@ header ul li {
 }
 
 .form-section {
-  background-color: rgb(20, 20, 20);
+  /* background-color: rgb(20, 20, 20); */
+  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(0, 0, 0));
   color: white;
   padding: 4rem 25rem;
   h1 {
@@ -467,21 +468,24 @@ select {
   margin-bottom: 2rem;
 }
 
-.contact-flexbox li{
+.contact-flexbox li {
   margin: 0.5rem 0;
 }
 
 /* apply page */
 
 .abt-employer {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(60, 60, 60);
   color: White;
+  padding: 5rem 15rem;
 }
+
 .abt-employer h1 {
   margin: 0;
   text-align: center;
-  padding-top: 4rem;
+  padding: 4rem 0 1.5rem 0;
   font-size: 3rem;
+  border-bottom: 2px solid white;
 }
 
 .abt-flex {
@@ -490,7 +494,19 @@ select {
   flex-direction: row;
 }
 
+.abt-flex-sub {
+  display: flex;
+  margin: 0 2rem;
+  img {
+    margin-right: 0.75rem;
+  }
+}
+
 /* review */
+
+.reviews {
+  background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(40, 40, 40));
+}
 
 .reviews h1 {
   margin: 0;
@@ -500,7 +516,6 @@ select {
 }
 
 .review-card {
-  background-color: rgba(20, 20, 20);
   padding: 4rem 30rem;
 }
 
@@ -564,6 +579,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 4rem;
   background-color: rgba(80, 80, 80);
   border-radius: 15px;
