@@ -17,6 +17,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -107,12 +108,11 @@ header ul li {
   margin: auto 0.75rem;
 }
 
-.lang-flex {
+.lang-flex a{
   display: flex;
   flex-direction: row;
-  img {
-    margin: auto 0;
-    margin-right: 0.25rem;
+  img{
+    margin: auto 0.5rem auto 0;
   }
 }
 
