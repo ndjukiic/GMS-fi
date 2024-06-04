@@ -328,6 +328,23 @@ header ul li {
   font-size: 1.25rem;
 }
 
+.abt-text {
+  background: linear-gradient(#69e46d, #69e46d) left no-repeat, white;
+  background-size: 0% 100%;
+  background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.05);
+  transition: 0.5s ease-in-out;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2rem auto;
+}
+
+.abt-text:hover {
+  background-size: 100% 100%;
+  transition: 0.5s;
+}
+
 .reviews {
   background-color: rgb(20, 20, 20);
   text-align: center;
