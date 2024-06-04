@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div
+      class="backdrop"
+      id="backdrop"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('./industries-img/manufacturing.jpg'); background-size: cover;
+      "
+    >
+      <h1>Construction</h1>
+      <div class="contact-btns" style="margin-top: 7rem">
+        <a href="#contact-us"><h3>Order an employee</h3></a>
+        <a href="#contact-us"><h3>Apply for a job</h3></a>
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <a href="./index-en.html">GMS FI</a>
+      </div>
+      <nav class="options">
+        <ul>
+          <li><a href="./index-en.html">Order an employee</a></li>
+          <li class="dropdown">
+            <a href="./apply-for-a-job.html">Apply for a job </a>
+            <!-- dodaj strelicu -->
+            <div class="dropdown-content">
+              <a href="job1.html">Job 1</a>
+              <a href="job1.html">Job 2</a>
+              <a href="job1.html">Job 3</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            Industries
+            <div class="dropdown-content">
+              <a href="job1.html">Job 1</a>
+              <a href="job1.html">Job 2</a>
+              <a href="job1.html">Job 3</a>
+            </div>
+          </li>
+          <li><a href="./references.html">References</a></li>
+          <li><a href="./contact-us.html">Contact us</a></li>
+          <li class="dropdown">
+            <div class="lang-flex">
+              <img
+                src="https://img.icons8.com/color/28/great-britain.png"
+                alt="great-britain"
+              />
+              <p>EN</p>
+            </div>
+            <div class="dropdown-content">
+              <a href="job1.html">Job 1</a>
+              <a href="job1.html">Job 2</a>
+              <a href="job1.html">Job 3</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav class="socials">
+        <ul>
+          <li>
+            <a href=""
+              ><img
+                width="42"
+                height="42"
+                src="https://img.icons8.com/fluency/48/facebook-new.png"
+                alt="facebook-new"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                width="42"
+                height="42"
+                src="https://img.icons8.com/fluency/48/instagram-new.png"
+                alt="instagram-new"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                width="42"
+                height="42"
+                src="https://img.icons8.com/fluency/48/linkedin.png"
+                alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- promijeni u construction form -->
+
+    <section class="form-section">
+      <h1>Interested?</h1>
+      <form action="" class="signup-form">
+        <div class="form-input">
+          <label for="fullname">Full name: </label>
+          <input type="text" id="fullname" name="fullname" />
+        </div>
+        <div class="form-input">
+          <label for="title">Title: </label>
+          <input type="text" id="title" name="title" />
+        </div>
+        <div class="form-input">
+          <label for="compname">Company Name: </label>
+          <input type="text" id="compname" name="compname" />
+        </div>
+        <div class="form-input">
+          <label for="email">E-Mail*:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-checkboxes">
+          <p>I want to be contacted:</p>
+          <input type="checkbox" id="yes" name="yes" />
+          <label for="position1">Yes</label>
+          <input type="checkbox" id="no" name="no" />
+          <label for="position1">No</label>
+        </div>
+        <div class="form-review">
+          <label for="review-message">Review message:</label>
+          <input type="textarea" id="review-message" name="review-message" />
+        </div>
+        <div class="form-input">
+          <button class="form-btn">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="contact">
+      <div class="contact-flexbox">
+        <div class="contact-nav">
+          <div id="homepage-link">
+            <a>GMS FI</a>
+          </div>
+          <ul class="contact-list">
+            <li>
+              <a href="./index-en.html">Order an employee</a>
+            </li>
+            <li>
+              <a href="./apply-for-a-job.html">Apply for a job</a>
+            </li>
+            <li>
+              <a href="./references.html">References</a>
+            </li>
+            <li>
+              <a href="./contact-us.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-options">
+          <p>Contact</p>
+          <div>
+            <ul class="contact-list">
+              <li style="display: flex">
+                <img
+                  width="25"
+                  height="25"
+                  src="https://img.icons8.com/ios-filled/50/40C057/phone.png"
+                  alt="phone"
+                  style="margin: auto 0.5rem"
+                />
+                <a href="">Phone</a>
+              </li>
+
+              <li style="display: flex">
+                <img
+                  width="25"
+                  height="25"
+                  src="https://img.icons8.com/ios-filled/25/40C057/new-post.png"
+                  alt="new-post"
+                  style="margin: auto 0.5rem"
+                />
+                <a href="">E-Mail</a>
+              </li>
+              <li style="display: flex">
+                <img
+                  width="25"
+                  height="25"
+                  src="https://img.icons8.com/ios-filled/25/40C057/marker.png"
+                  alt="marker"
+                  style="margin: auto 0.5rem"
+                />
+                <a href="">Location</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <p>Socials</p>
+          <ul class="contact-list">
+            <li>
+              <a href=""
+                ><img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/fluency/48/facebook-new.png"
+                  alt="facebook-new"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/fluency/48/instagram-new.png"
+                  alt="instagram-new"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  width="35"
+                  height="35"
+                  src="https://img.icons8.com/fluency/48/linkedin.png"
+                  alt="linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
