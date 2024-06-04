@@ -44,7 +44,7 @@ header ul li {
 
 .options a {
   color: white;
-  text-shadow: 2px 1px 1px #3e8e41c0;
+  text-shadow: 2px 1px 1px #3d8840;
 }
 
 .logo {
@@ -58,7 +58,7 @@ header ul li {
   font-size: 2.5rem;
   color: white;
 
-  text-shadow: 2px 1px 1px #3e8e41c0;
+  text-shadow: 2px 1px 1px #3d8840;
 }
 
 .dropdown {
@@ -122,7 +122,7 @@ header ul li {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("./backdrop.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -149,6 +149,26 @@ header ul li {
 .contact-btns {
   margin: 2rem auto;
   display: flex;
+}
+.contact-text h2 {
+  font-size: 2rem;
+  color: #69e46d;
+  text-shadow: 4px 2px 2px black;
+}
+
+.contact-text a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  background-color: #69e46d;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+.contact-text a:hover {
+  background-color: #4a804c;
+  color: White;
+  transition: 0.25s;
 }
 
 .contact-btns h3 {
@@ -184,7 +204,7 @@ header ul li {
 
 .description {
   padding: 7rem 10rem;
-  background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(20, 20, 20));
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   color: white;
   text-align: center;
   h1 {
@@ -225,6 +245,7 @@ header ul li {
 .industries-item img {
   position: absolute;
   object-fit: cover;
+  opacity: 0.65;
   transition: 0.5s;
 }
 
@@ -249,23 +270,31 @@ header ul li {
   border: 3px solid #69e46d;
   border-radius: 15px;
   box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
-  background-color: #69e46d;
-  transition: 0.5s;
+  background: linear-gradient(
+    to right,
+    #69e46d 0%,
+    #69e46d 50%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.3s;
 }
 
 .img-cnt a:hover {
-  background-color: #adffb0;
-  border-color: #adffb0;
-  transition: 0.5s;
+  background-position: 0 0;
+  color: black;
+  transition: 0.3s;
 }
 
 .industries-item img:hover {
-  opacity: 0.7;
-  transition: 0.5s;
+  opacity: 0.3;
+  transition: 0.2s;
 }
 
 .choose-us {
-  background-color: rgb(60, 60, 60);
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   padding: 5rem 25rem;
 }
 
@@ -300,19 +329,19 @@ header ul li {
   text-align: center;
 }
 
-.customers {
+.customers, .employees {
   color: white;
   padding: 5rem 2rem;
-  background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(40, 40, 40));
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
 }
 
-.customers h1 {
+.customers h1, .employees h1 {
   text-align: center;
   font-size: 2.5rem;
   padding-bottom: 3rem;
 }
 
-.customer-card {
+.customer-card{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -347,10 +376,12 @@ header ul li {
 
 .prev,
 .next {
+  color:#69e46d;
   cursor: pointer;
   position: absolute;
   width: auto;
-  font-size: 2.5rem;
+  text-shadow: 4px 2px 2px black;
+  font-size: 4rem;
   margin-top: -15rem;
 }
 
@@ -363,8 +394,7 @@ header ul li {
 }
 
 .form-section {
-  /* background-color: rgb(20, 20, 20); */
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(0, 0, 0));
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   color: white;
   padding: 4rem 25rem;
   h1 {
@@ -374,7 +404,8 @@ header ul li {
   }
 }
 
-.signup-form {
+.signup-form,
+.application-form {
   display: flex;
   flex-direction: column;
 }
@@ -429,7 +460,7 @@ select {
 }
 
 .contact {
-  background-color: rgb(20, 20, 20);
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   padding: 4rem 10rem;
   color: white;
   border-top: 1px solid white;
@@ -483,7 +514,7 @@ select {
 /* apply page */
 
 .abt-employer {
-  background-color: rgb(60, 60, 60);
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   color: White;
   padding: 5rem 15rem;
 }
@@ -513,7 +544,7 @@ select {
 /* review */
 
 .reviews {
-  background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(40, 40, 40));
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
 }
 
 .reviews h1 {
@@ -562,7 +593,7 @@ select {
 /* contact-us */
 
 .text-section {
-  background-color: rgb(20, 20, 20);
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   padding: 5rem 15rem;
   color: white;
   font-size: 1.5rem;
@@ -572,7 +603,7 @@ select {
 .recruitment-contact,
 .finance-contact,
 .management-contact {
-  background-color: rgb(20, 20, 20);
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   padding: 5rem 15rem;
   color: white;
 }
@@ -589,7 +620,7 @@ select {
   justify-content: center;
   align-items: center;
   padding: 4rem;
-  background-color: rgba(80, 80, 80);
+  background-color: rgba(80, 80, 80, 0.2);
   border-radius: 15px;
   margin: 1.5rem auto;
 }
