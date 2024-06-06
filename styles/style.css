@@ -289,7 +289,6 @@ header ul li {
   transition: 0.3s;
 }
 
-
 .industries-item img:hover {
   opacity: 0.3;
   transition: 0.2s;
@@ -310,6 +309,8 @@ header ul li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  margin-top: 4rem;
 }
 
 .abt-item {
@@ -318,12 +319,22 @@ header ul li {
 }
 
 .abt-item img {
-  margin: auto 0;
   margin-right: 1rem;
 }
 
 .abt-item {
   font-size: 1.25rem;
+}
+.abt-flex-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.abt-item span {
+  color: #3e8e41;
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-transform: uppercase;
 }
 
 .abt-text {
