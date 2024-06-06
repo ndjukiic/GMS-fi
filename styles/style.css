@@ -108,10 +108,10 @@ header ul li {
   margin: auto 0.75rem;
 }
 
-.lang-flex a{
+.lang-flex a {
   display: flex;
   flex-direction: row;
-  img{
+  img {
     margin: auto 0.5rem auto 0;
   }
 }
@@ -263,9 +263,7 @@ header ul li {
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
-
-.img-cnt-btn{
-
+.img-cnt-btn {
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -285,12 +283,12 @@ header ul li {
   background-position: 100% 0;
   transition: background-position 0.3s;
 }
-.img-cnt-btn:hover{
-
+.img-cnt-btn:hover {
   background-position: 0 0;
   color: black;
   transition: 0.3s;
 }
+
 
 .industries-item img:hover {
   opacity: 0.3;
@@ -332,8 +330,8 @@ header ul li {
   background: linear-gradient(#69e46d, #69e46d) left no-repeat, white;
   background-size: 0% 100%;
   background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.05);
   transition: 0.5s ease-in-out;
   font-size: 1.25rem;
   font-weight: 700;
