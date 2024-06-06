@@ -454,6 +454,28 @@
         }
         slides[slideIndex - 1].style.display = "block";
       }
+
+      document.addEventListener('DOMContentLoaded', function () {
+  const options = {
+    root: null,
+    rootMargin: '-400px',
+    threshold: 0.1 // 10% of the .choose-us element should be visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const abtTextElements = document.querySelectorAll('.choose-us .abt-text');
+        abtTextElements.forEach(el => el.classList.add('animate-hover'));
+        observer.unobserve(entry.target); // Stop observing after animation starts
+      }
+    });
+  }, options);
+
+  const target = document.querySelector('.choose-us');
+  observer.observe(target);
+});
+
     </script>
   </body>
 </html>
