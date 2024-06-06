@@ -265,6 +265,7 @@ header ul li {
 
 .img-cnt-btn {
   text-decoration: none;
+  text-transform: uppercase;
   color: white;
   cursor: pointer;
   font-weight: 400;
