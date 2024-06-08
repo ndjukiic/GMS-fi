@@ -368,7 +368,6 @@ header ul li {
   animation: hoverAnimation 0.5s ease-in-out forwards;
 }
 
-
 .reviews {
   background-color: rgb(20, 20, 20);
   text-align: center;
@@ -443,9 +442,10 @@ header ul li {
 .form-section {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   color: white;
-  padding: 4rem 25rem;
+  padding: 2rem 15rem;
   h1 {
-    margin-top: 0;
+    font-size: 4rem;
+    margin-top: 2rem;
     padding-top: 2rem;
     text-align: center;
   }
@@ -455,6 +455,9 @@ header ul li {
 .application-form {
   display: flex;
   flex-direction: column;
+  padding: 4rem 10rem;
+  border-radius: 30px;
+  background-color: #1e1e1e;
 }
 
 .form-input {
@@ -574,17 +577,19 @@ select {
   border-bottom: 2px solid white;
 }
 
-.abt-flex {
+.abt-grid {
   padding: 3rem 15rem;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .abt-flex-sub {
   display: flex;
   margin: 0 2rem;
   img {
-    margin-right: 0.75rem;
+    margin: auto 0;
+    margin-right: 1rem;
   }
 }
 
