@@ -443,6 +443,7 @@ header ul li {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   color: white;
   padding: 2rem 15rem;
+  padding-bottom: 10rem;
   h1 {
     font-size: 4rem;
     margin-top: 2rem;
