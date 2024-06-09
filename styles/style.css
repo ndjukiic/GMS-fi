@@ -807,6 +807,9 @@ select {
 .list-txt {
   margin-left: 2rem;
   padding-right: 10rem;
+  span{
+    margin-bottom: 1rem;
+  }
 }
 
 .search-grid{
@@ -824,5 +827,5 @@ select {
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
-  
+
 }
