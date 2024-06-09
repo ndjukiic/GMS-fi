@@ -760,7 +760,7 @@ select {
 
 /* industries css */
 
-.we-provide {
+.we-provide,.employee-search {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   color: white;
   padding: 5rem 10rem;
@@ -807,4 +807,22 @@ select {
 .list-txt {
   margin-left: 2rem;
   padding-right: 10rem;
+}
+
+.search-grid{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-column-gap: 5rem;
+}
+.search-img{
+  width: 100%;
+  overflow: hidden;
+}
+
+.search-img img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  
 }
