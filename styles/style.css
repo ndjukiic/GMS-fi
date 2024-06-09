@@ -297,7 +297,7 @@ header ul li {
 
 .choose-us {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
-  padding: 5rem 25rem;
+  padding: 3rem 10rem;
 }
 
 .choose-us h1 {
@@ -756,4 +756,55 @@ select {
   background-color: #4a804c;
   color: White;
   transition: 0.25s;
+}
+
+/* industries css */
+
+.we-provide {
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
+  color: white;
+  padding: 5rem 10rem;
+}
+
+.we-provide h1 {
+  margin: 0;
+}
+
+.provide-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem 10rem;
+  grid-column-gap: 5rem;
+}
+
+.provide-img {
+  width: 100%;
+  text-align: right;
+}
+
+.provide-img img {
+  object-fit: cover;
+  height: 700px;
+  width: 500px;
+}
+.provide-txt ul {
+  list-style: none;
+}
+
+.provide-txt li {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  span {
+    font-weight: 700;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.list-txt {
+  margin-left: 2rem;
+  padding-right: 10rem;
 }
