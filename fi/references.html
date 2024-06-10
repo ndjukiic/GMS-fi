@@ -159,14 +159,14 @@
     <!-- promijeni u application form -->
 
     <section class="form-section">
-      <h1>Kiinnostunut?</h1>
-      <form action="" class="signup-form">
+      <h1>Kirjoita meille arvostelu!</h1>
+      <form class="signup-form" id="signup-form">
         <div class="form-input">
           <label for="fullname">Koko nimi: </label>
           <input type="text" id="fullname" name="fullname" />
         </div>
         <div class="form-input">
-          <label for="title">Titteli: </label>
+          <label for="title">Nimike: </label>
           <input type="text" id="title" name="title" />
         </div>
         <div class="form-input">
@@ -178,22 +178,23 @@
           <input type="email" id="email" name="email" />
         </div>
         <div class="form-checkboxes">
-          <p>Haluatko tulla kontaktoiduksi:</p>
+          <p>Haluatko, että otamme sinuun yhteyttä?</p>
           <input type="checkbox" id="yes" name="yes" />
-          <label for="position1">Kyllä</label>
+          <label for="yes">Kyllä</label>
           <input type="checkbox" id="no" name="no" />
-          <label for="position1">Ei</label>
+          <label for="no">Ei</label>
         </div>
         <div class="form-review">
-          <label for="review-message">Arvosteluviesti:</label>
-          <input type="textarea" id="review-message" name="review-message" />
+          <label for="review-message">Arvostelun viesti:</label>
+          <textarea id="review-message" name="review-message"></textarea>
         </div>
         <div class="form-input">
-          <button class="form-btn">Lähetä</button>
+          <button type="button" class="form-btn" onclick="submitForm()">
+            Lähetä
+          </button>
         </div>
       </form>
     </section>
-    
 
     <section class="contact">
       <div class="contact-flexbox">
@@ -287,6 +288,27 @@
         </div>
       </div>
     </section>
-    
+    <script>
+      function submitForm() {
+        const fullname = document.getElementById("fullname").value;
+        const title = document.getElementById("title").value;
+        const compname = document.getElementById("compname").value;
+        const email = document.getElementById("email").value;
+        const yes = document.getElementById("yes").checked ? "Yes" : "";
+        const no = document.getElementById("no").checked ? "No" : "";
+        const reviewMessage = document.getElementById("review-message").value;
+
+        const subject = "Write us a review!";
+        const body = `Full name: ${fullname}%0D%0A
+    Title: ${title}%0D%0A
+    Company Name: ${compname}%0D%0A
+    E-Mail: ${email}%0D%0A
+    I want to be contacted: ${yes || no}%0D%0A
+    Review message: ${reviewMessage}`;
+
+        const mailtoLink = `mailto:test@test.com?subject=${subject}&body=${body}`;
+        window.location.href = mailtoLink;
+      }
+    </script>
   </body>
 </html>
