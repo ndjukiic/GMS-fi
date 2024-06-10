@@ -31,6 +31,10 @@ header {
   width: 100%;
   color: white;
   font-size: 1.15rem;
+  opacity: 0; /* Start with header hidden */
+  transform: translateY(-100%); /* Start position above the top of the screen */
+  transition: opacity 2s, transform 2s; /* Smooth transition for opacity and position */
+  animation: dropIn 1s forwards;
 }
 
 header ul {
@@ -41,6 +45,17 @@ header ul {
 header ul li {
   margin: auto 1.5rem;
   padding: 0.5rem 0;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .options a {
@@ -137,7 +152,9 @@ header ul li {
   font-size: 6rem;
   color: rgb(255, 255, 255);
   text-shadow: 4px 1px 1px rgba(0, 0, 0, 0.4);
+  animation: txtFill 4s forwards;
 }
+
 .backdrop p {
   margin: 0 auto;
   font-size: 1.5rem;
@@ -146,6 +163,15 @@ header ul li {
 
   color: white;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes txtFill {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #69e46d;
+  }
 }
 
 .contact-btns {
@@ -608,16 +634,26 @@ select {
 }
 
 .review-card {
-  padding: 4rem 30rem;
+  padding: 4rem 10rem;
 }
 
 .review-flex {
+  padding: 2rem 10rem;
+  border-radius: 25px;
+  background-color: #1e1e1e;
+  border: 1px solid white;
+  box-shadow: 0px 0px 0px 3px white;
+  transition: 1s;
   color: white;
   display: flex;
   flex-direction: row;
   img {
     margin: auto 0;
   }
+}
+
+.review-flex:hover {
+  box-shadow: 0px 0px 0px 13px white;
 }
 
 .review-text {
@@ -674,6 +710,7 @@ select {
   align-items: center;
   padding: 4rem;
   background-color: rgba(80, 80, 80, 0.2);
+  border: 1px inset white;
   border-radius: 15px;
   margin: 1.5rem auto;
 }
@@ -760,7 +797,8 @@ select {
 
 /* industries css */
 
-.we-provide,.employee-search {
+.we-provide,
+.employee-search {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   color: white;
   padding: 5rem 10rem;
@@ -807,25 +845,24 @@ select {
 .list-txt {
   margin-left: 2rem;
   padding-right: 10rem;
-  span{
+  span {
     margin-bottom: 1rem;
   }
 }
 
-.search-grid{
+.search-grid {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-column-gap: 5rem;
 }
-.search-img{
+.search-img {
   width: 100%;
   overflow: hidden;
 }
 
-.search-img img{
+.search-img img {
   height: 250px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
-
 }
