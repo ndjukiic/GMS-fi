@@ -290,22 +290,25 @@
 
     <section class="form-section" id="contact-form">
       <h1>Interested?</h1>
-      <form action="" class="signup-form">
+      <form action="mailto:test@test.com" method="POST" class="signup-form" enctype="text/plain">
+        <div class="form-input" style="display:none">
+        <input type="text" id="first-name" name="first-name" value=" open-application" />
+      </div>
         <div class="form-input">
-          <label for="fname">First Name: </label>
-          <input type="text" id="fname" name="fname" />
+          <label for="first-name">First Name: </label>
+          <input type="text" id="first-name" name="first-name " />
         </div>
         <div class="form-input">
           <label for="surname">Surname: </label>
           <input type="text" id="surname" name="surname" />
         </div>
         <div class="form-input">
-          <label for="compname">Company Name: </label>
-          <input type="text" id="compname" name="compname" />
+          <label for="company-name">Company Name: </label>
+          <input type="text" id="company-name" name="company-name" />
         </div>
         <div class="form-input">
-          <label for="phonenum">Telephone Number*: </label>
-          <input type="number" id="phonenum" name="phonenum" />
+          <label for="phone-number">Telephone Number*: </label>
+          <input type="number" id="phone-number" name="phone-number" />
         </div>
         <div class="form-input">
           <label for="email">E-Mail*:</label>
