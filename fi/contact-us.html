@@ -537,7 +537,7 @@
 
     <section class="form-section">
       <h1>Kiinnostunut?</h1>
-      <form action="" class="signup-form">
+      <form action="" class="signup-form" id="signup-form">
         <div class="form-input">
           <label for="fullname">Koko nimi: </label>
           <input type="text" id="fullname" name="fullname" />
@@ -566,7 +566,9 @@
           <input type="textarea" id="review-message" name="review-message" />
         </div>
         <div class="form-input">
-          <button class="form-btn">Lähetä</button>
+          <button type="button" class="form-btn" onclick="submitForm()">
+            Lähetä
+          </button>
         </div>
       </form>
     </section>
@@ -664,5 +666,28 @@
         </div>
       </div>
     </section>
+
+    <script>
+      function submitForm() {
+        const fullname = document.getElementById("fullname").value;
+        const title = document.getElementById("title").value;
+        const compname = document.getElementById("compname").value;
+        const email = document.getElementById("email").value;
+        const yes = document.getElementById("yes").checked ? "Yes" : "";
+        const no = document.getElementById("no").checked ? "No" : "";
+        const reviewMessage = document.getElementById("review-message").value;
+
+        const subject = "Contact Form";
+        const body = `Full name: ${fullname}%0D%0A
+      Title: ${title}%0D%0A
+      Company Name: ${compname}%0D%0A
+      E-Mail: ${email}%0D%0A
+      I want to be contacted: ${yes || no}%0D%0A
+      Review message: ${reviewMessage}`;
+
+        const mailtoLink = `mailto:test@test.com?subject=${subject}&body=${body}`;
+        window.location.href = mailtoLink;
+      }
+    </script>
   </body>
 </html>

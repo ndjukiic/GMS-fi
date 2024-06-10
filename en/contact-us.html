@@ -530,7 +530,7 @@
 
     <section class="form-section">
       <h1>Interested?</h1>
-      <form action="" class="signup-form">
+      <form action="" class="signup-form" id="signup-form">
         <div class="form-input">
           <label for="fullname">Full name: </label>
           <input type="text" id="fullname" name="fullname" />
@@ -550,20 +550,22 @@
         <div class="form-checkboxes">
           <p>I want to be contacted:</p>
           <input type="checkbox" id="yes" name="yes" />
-          <label for="position1">Yes</label>
+          <label for="yes">Yes</label>
           <input type="checkbox" id="no" name="no" />
-          <label for="position1">No</label>
+          <label for="no">No</label>
         </div>
         <div class="form-review">
           <label for="review-message">Review message:</label>
-          <input type="textarea" id="review-message" name="review-message" />
+          <textarea id="review-message" name="review-message"></textarea>
         </div>
         <div class="form-input">
-          <button class="form-btn">Submit</button>
+          <button type="button" class="form-btn" onclick="submitForm()">Submit</button>
         </div>
       </form>
     </section>
-
+    
+   
+    
     <section class="contact">
       <div class="contact-flexbox">
         <div class="contact-nav">
@@ -657,5 +659,27 @@
         </div>
       </div>
     </section>
+    <script>
+      function submitForm() {
+        const fullname = document.getElementById('fullname').value;
+        const title = document.getElementById('title').value;
+        const compname = document.getElementById('compname').value;
+        const email = document.getElementById('email').value;
+        const yes = document.getElementById('yes').checked ? 'Yes' : '';
+        const no = document.getElementById('no').checked ? 'No' : '';
+        const reviewMessage = document.getElementById('review-message').value;
+      
+        const subject = 'Open Job Application';
+        const body = `Full name: ${fullname}%0D%0A
+      Title: ${title}%0D%0A
+      Company Name: ${compname}%0D%0A
+      E-Mail: ${email}%0D%0A
+      I want to be contacted: ${yes || no}%0D%0A
+      Review message: ${reviewMessage}`;
+      
+        const mailtoLink = `mailto:test@test.com?subject=${subject}&body=${body}`;
+        window.location.href = mailtoLink;
+      }
+      </script>
   </body>
 </html>
