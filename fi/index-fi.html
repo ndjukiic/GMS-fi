@@ -302,9 +302,7 @@
     </section>
     <section class="form-section" id="contact-form">
       <h1>Kiinnostunut?</h1>
-      <form action="mailto:test@test.com" method="POST" class="signup-form" enctype="text/plain">
-        <div class="form-input" style="display:none">
-        <input type="text" id="first-name" name="first-name" value=" open-application" />
+      <form id="order-an-employee-form" class="signup-form">
         <div class="form-input">
           <label for="first-name">Etunimi: </label>
           <input type="text" id="first-name" name="first-name" />
@@ -338,7 +336,7 @@
           </select>
         </div>
         <div class="form-input">
-          <button class="form-btn">Lähetä</button>
+          <button class="form-btn" type="button" onclick="submitForm()">Lähetä</button>
         </div>
       </form>
     </section>
@@ -488,6 +486,32 @@
         const target = document.querySelector(".choose-us");
         observer.observe(target);
       });
+
+      function submitForm() {
+        const firstName = document.getElementById("first-name").value;
+        const surname = document.getElementById("surname").value;
+        const companyName = document.getElementById("company-name").value;
+        const phoneNumber = document.getElementById("phone-number").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        const how = document.getElementById("how").value;
+
+        const subject = "Order an Employee";
+        const body = `
+    First Name: ${firstName}
+    Last Name: ${surname}
+    Company Name: ${companyName}
+    Telephone Number: ${phoneNumber}
+    E-Mail: ${email}
+    Message: ${message}
+    How did you find us?: ${how}
+  `;
+
+        const mailtoLink = `mailto:test@test.com?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+      }
     </script>
   </body>
 </html>
