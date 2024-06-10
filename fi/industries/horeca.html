@@ -24,7 +24,7 @@
     >
     <h1>HoReCa</h1>
     <div class="contact-btns" style="margin-top: 7rem">
-      <a href="#employee-order"><h3>Tilaa työntekijä</h3></a>
+      <a href="#contact-form"><h3>Tilaa työntekijä</h3></a>
       <a href="#form-section"><h3>Hae työpaikkaa</h3></a>
     </div>
     
@@ -188,40 +188,45 @@
       </div>
     </section>
 
-    <!-- promijeni u construction form -->
-
-    <section class="form-section" id="employee-order">
-      <h1>Interested?</h1>
-      <form action="" class="signup-form">
+    <section class="form-section" id="contact-form">
+      <h1>Kiinnostunut?</h1>
+      <form id="order-an-employee-form" class="signup-form">
         <div class="form-input">
-          <label for="fullname">Full name: </label>
-          <input type="text" id="fullname" name="fullname" />
+          <label for="first-name">Etunimi: </label>
+          <input type="text" id="first-name" name="first-name" />
         </div>
         <div class="form-input">
-          <label for="title">Title: </label>
-          <input type="text" id="title" name="title" />
+          <label for="surname">Sukunimi: </label>
+          <input type="text" id="surname" name="surname" />
         </div>
         <div class="form-input">
-          <label for="compname">Company Name: </label>
-          <input type="text" id="compname" name="compname" />
+          <label for="company-name">Yrityksen nimi: </label>
+          <input type="text" id="company-name" name="company-name" />
         </div>
         <div class="form-input">
-          <label for="email">E-Mail*:</label>
+          <label for="phone-number">Puhelinnumero*: </label>
+          <input type="number" id="phone-number" name="phone-number" />
+        </div>
+        <div class="form-input">
+          <label for="email">Sähköposti*:</label>
           <input type="email" id="email" name="email" />
         </div>
-        <div class="form-checkboxes">
-          <p>I want to be contacted:</p>
-          <input type="checkbox" id="yes" name="yes" />
-          <label for="position1">Yes</label>
-          <input type="checkbox" id="no" name="no" />
-          <label for="position1">No</label>
-        </div>
-        <div class="form-review">
-          <label for="review-message">Review message:</label>
-          <input type="textarea" id="review-message" name="review-message" />
+        <div class="form-input">
+          <label for="message">Viesti*:</label>
+          <textarea id="message" name="message"></textarea>
         </div>
         <div class="form-input">
-          <button class="form-btn">Submit</button>
+          <label for="how">Miten löysit meidät?</label>
+          <select name="how" id="how">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="form-input">
+          <button class="form-btn" type="button" onclick="submitForm()">
+            Lähetä
+          </button>
         </div>
       </form>
     </section>
@@ -246,11 +251,8 @@
     </section>
 
     <section class="form-section" id="form-section">
-      <h2 style="text-align: center">
-        Lähetä työhakemus alla olevalla lomakkeella!
-      </h2>
-
-      <form action="" class="application-form">
+      <h1>Kiinnostuitko?</h1>
+      <form id="application-form" class="application-form">
         <div class="form-input">
           <label for="fname">Etunimi: </label>
           <input type="text" id="fname" name="fname" />
@@ -272,74 +274,50 @@
           <input type="email" id="email" name="email" />
         </div>
         <div class="form-checkboxes">
-          <p>Ammatit, joita voit täyttää:</p>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <br />
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <br />
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
-          <input type="checkbox" id="position1" name="position1" />
-          <label for="position1">Asema 1</label>
+          <p>Ammatilliset tehtävät, joita voit täyttää:</p>
+          <input type="checkbox" id="position1" name="position" />
+          <label for="position1">Tehtävä 1</label>
+          <input type="checkbox" id="position2" name="position" />
+          <label for="position2">Tehtävä 2</label>
+          <input type="checkbox" id="position3" name="position" />
+          <label for="position3">Tehtävä 3</label>
+          <input type="checkbox" id="position4" name="position" />
+          <label for="position4">Tehtävä 4</label>
+          <input type="checkbox" id="position5" name="position" />
+          <label for="position5">Tehtävä 5</label>
         </div>
         <div class="form-input">
           <label for="experience">Kerro lisää työkokemuksestasi:</label>
           <input type="textbox" id="experience" name="experience" />
         </div>
         <div class="form-checkboxes">
-          <p>Kielet, joita osaat puhua:</p>
-          <input type="checkbox" id="language1" name="language1" />
+          <p>Kielet, joita puhut:</p>
+          <input type="checkbox" id="language1" name="language" />
           <label for="language1">Kieli 1</label>
-          <input type="checkbox" id="language1" name="language1" />
-          <label for="language1">Kieli 1</label>
-          <input type="checkbox" id="language1" name="language1" />
-          <label for="language1">Kieli 1</label>
-          <input type="checkbox" id="language1" name="language1" />
-          <label for="language1">Kieli 1</label>
-          <input type="checkbox" id="language1" name="language1" />
-          <label for="language1">Kieli 1</label>
+          <input type="checkbox" id="language2" name="language" />
+          <label for="language2">Kieli 2</label>
+          <input type="checkbox" id="language3" name="language" />
+          <label for="language3">Kieli 3</label>
+          <input type="checkbox" id="language4" name="language" />
+          <label for="language4">Kieli 4</label>
+          <input type="checkbox" id="language5" name="language" />
+          <label for="language5">Kieli 5</label>
         </div>
         <div class="form-checkboxes">
-          <p>Omistatko jo jonkin seuraavista suomalaisista asiakirjoista?</p>
-          <input type="checkbox" id="document1" name="document1" />
+          <p>Onko sinulla jo jokin seuraavista suomalaisista asiakirjoista?</p>
+          <input type="checkbox" id="document1" name="document" />
           <label for="document1">Asiakirja 1</label>
-          <input type="checkbox" id="document1" name="document1" />
-          <label for="document1">Asiakirja 1</label>
-          <input type="checkbox" id="document1" name="document1" />
-          <label for="document1">Asiakirja 1</label>
-          <input type="checkbox" id="document1" name="document1" />
-          <label for="document1">Asiakirja 1</label>
-          <input type="checkbox" id="document1" name="document1" />
-          <label for="document1">Asiakirja 1</label>
-          <input type="checkbox" id="document1" name="document1" />
-          <label for="document1">Asiakirja 1</label>
-          <input type="checkbox" id="document1" name="document1" />
-          <label for="document1">Asiakirja 1</label>
-        </div>
-        <div class="form-input" style="width: 20%">
-          <label for="cv">Liitä CV:</label>
-          <input type="file" id="cv" name="cv" style="margin-top: 0.5rem" />
+          <input type="checkbox" id="document2" name="document" />
+          <label for="document2">Asiakirja 2</label>
+          <input type="checkbox" id="document3" name="document" />
+          <label for="document3">Asiakirja 3</label>
+          <input type="checkbox" id="document4" name="document" />
+          <label for="document4">Asiakirja 4</label>
+          <input type="checkbox" id="document5" name="document" />
+          <label for="document5">Asiakirja 5</label>
         </div>
         <div class="form-input">
-          <label for="how">Kuinka löysit meidät?</label>
+          <label for="how">Miten löysit meidät?</label>
           <select name="how" id="how">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -347,7 +325,16 @@
           </select>
         </div>
         <div class="form-input">
-          <button class="form-btn">Lähetä</button>
+          <h2>
+            Muista
+            <span style="color: red">liittää CV sähköpostiin</span> lähettämisen
+            jälkeen.
+          </h2>
+        </div>
+        <div class="form-input">
+          <button class="form-btn" type="button" onclick="submitForm2()">
+            Lähetä
+          </button>
         </div>
       </form>
     </section>
@@ -445,5 +432,87 @@
         </div>
       </div>
     </section>
+    <script>
+      function submitForm() {
+        const firstName = document.getElementById("first-name").value;
+        const surname = document.getElementById("surname").value;
+        const companyName = document.getElementById("company-name").value;
+        const phoneNumber = document.getElementById("phone-number").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        const how = document.getElementById("how").value;
+
+        const subject = "Order an Employee";
+        const body = `
+  First Name: ${firstName}
+  Last Name: ${surname}
+  Company Name: ${companyName}
+  Telephone Number: ${phoneNumber}
+  E-Mail: ${email}
+  Message: ${message}
+  How did you find us?: ${how}
+`;
+
+        const mailtoLink = `mailto:test@test.com?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+      }
+
+      function submitForm2() {
+        const form = document.getElementById("application-form");
+        const formData = new FormData(form);
+
+        const firstName = formData.get("fname");
+        const surname = formData.get("surname");
+        const companyName = formData.get("compname");
+        const phoneNumber = formData.get("phonenum");
+        const email = formData.get("email");
+        const experience = formData.get("experience");
+        const how = formData.get("how");
+
+        const positions = [];
+        form
+          .querySelectorAll('input[name="position"]:checked')
+          .forEach((checkbox) => {
+            positions.push(checkbox.nextElementSibling.innerText);
+          });
+
+        const languages = [];
+        form
+          .querySelectorAll('input[name="language"]:checked')
+          .forEach((checkbox) => {
+            languages.push(checkbox.nextElementSibling.innerText);
+          });
+
+        const documents = [];
+        form
+          .querySelectorAll('input[name="document"]:checked')
+          .forEach((checkbox) => {
+            documents.push(checkbox.nextElementSibling.innerText);
+          });
+
+        const subject = "Open Job Application";
+        const body = `
+    First Name: ${firstName}
+    Surname: ${surname}
+    Company Name: ${companyName}
+    Telephone Number: ${phoneNumber}
+    E-Mail: ${email}
+    Professions you're able to fulfill: ${positions.join(", ")}
+    Tell us more about your work experience: ${experience}
+    Languages you're able to speak: ${languages.join(", ")}
+    Do you already own any of the following Finnish documents: ${documents.join(
+      ", "
+    )}
+    How did you find us?: ${how}
+  `;
+
+        const mailtoLink = `mailto:test@test.com?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+      }
+    </script>
   </body>
 </html>
