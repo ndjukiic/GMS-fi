@@ -2,6 +2,19 @@ body {
   font-family: "Teachers", sans-serif;
   margin: 0;
   padding: 0;
+  background: #093028; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #237a57,
+    #093028,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top right,
+    #237a57,
+    #093028,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul {
@@ -27,7 +40,7 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: rgb(20, 20, 20);
+  background-color: #06201b;
   width: 100%;
   color: white;
   font-size: 1.15rem;
@@ -60,7 +73,7 @@ header ul li {
 
 .options a {
   color: white;
-  text-shadow: 2px 1px 1px #3d8840;
+  text-shadow: 2px 1px 1px black;
 }
 
 .logo {
@@ -74,7 +87,7 @@ header ul li {
   font-size: 2.5rem;
   color: white;
 
-  text-shadow: 2px 1px 1px #3d8840;
+  text-shadow: 2px 1px 1px black;
 }
 
 .dropdown {
@@ -170,7 +183,7 @@ header ul li {
     color: white;
   }
   100% {
-    color: #69e46d;
+    color: #20a58a;
   }
 }
 
@@ -232,7 +245,7 @@ header ul li {
 
 .description {
   padding: 7rem 10rem;
-  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
+  background: transparent;
   color: white;
   text-align: center;
   h1 {
@@ -245,13 +258,18 @@ header ul li {
 
 .industries-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgba(20, 20, 20);
+  background-color: transparent;
+}
+.industries-flex {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5rem;
 }
 
 .industries-item {
@@ -261,6 +279,22 @@ header ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  width: 70%;
+  margin: 1rem 2rem;
+}
+
+.w-smaller {
+  width: 35%;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.industries-item:hover {
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
 .industries-item a:hover {
@@ -322,7 +356,7 @@ header ul li {
 }
 
 .choose-us {
-  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
+  background: transparent;
   padding: 3rem 10rem;
 }
 
@@ -403,7 +437,7 @@ header ul li {
 .employees {
   color: white;
   padding: 5rem 2rem;
-  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
+  background: transparent;
 }
 
 .customers h1,
@@ -466,7 +500,7 @@ header ul li {
 }
 
 .form-section {
-  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
+  background: transparent;
   color: white;
   padding: 2rem 15rem;
   padding-bottom: 10rem;
