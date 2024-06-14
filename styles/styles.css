@@ -828,8 +828,8 @@ select {
 
 .we-provide,
 .employee-search {
-  background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
-  color: white;
+  background: inherit;
+  color: inherit;
   padding: 5rem 10rem;
 }
 
@@ -853,6 +853,7 @@ select {
   object-fit: cover;
   height: 700px;
   width: 500px;
+  border-radius: 15px;
 }
 .provide-txt ul {
   list-style: none;
