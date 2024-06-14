@@ -757,9 +757,9 @@ select {
 /* jobs */
 
 .job-description {
-  background-color: rgba(20, 20, 20);
+  background-color: inherit;
   padding: 10rem 25rem;
-  color: white;
+  color: inherit;
   font-weight: 500;
   font-size: 1.25rem;
 }
@@ -792,9 +792,9 @@ select {
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
-  color: #69e46d;
+  color: inherit;
   padding: 1rem 0;
-  border-bottom: 2px solid #69e46d;
+  border-bottom: 2px solid #AF8F6F;
 }
 
 #number {
