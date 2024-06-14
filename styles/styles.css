@@ -2,19 +2,7 @@ body {
   font-family: "Teachers", sans-serif;
   margin: 0;
   padding: 0;
-  background: #093028; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #237a57,
-    #093028,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top right,
-    #237a57,
-    #093028,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #f8f4e1;
 }
 
 ul {
@@ -40,9 +28,9 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: #06201b;
+  background-color: #543310;
   width: 100%;
-  color: white;
+  color: #f8f4e1;
   font-size: 1.15rem;
   opacity: 0; /* Start with header hidden */
   transform: translateY(-100%); /* Start position above the top of the screen */
@@ -71,8 +59,9 @@ header ul li {
   }
 }
 
-.options a {
-  color: white;
+.options a,
+.options li p {
+  color: #f8f4e1;
   text-shadow: 2px 1px 1px black;
 }
 
@@ -85,7 +74,7 @@ header ul li {
   text-decoration: none;
   font-weight: 700;
   font-size: 2.5rem;
-  color: white;
+  color: #f8f4e1;
 
   text-shadow: 2px 1px 1px black;
 }
@@ -99,7 +88,7 @@ header ul li {
   margin-top: 0.5rem;
   display: none;
   position: absolute;
-  background-color: rgb(20, 20, 20);
+  background-color: #543310;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -107,14 +96,14 @@ header ul li {
 }
 
 .dropdown-content a {
-  color: white;
+  color: #f8f4e1;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(60, 60, 60);
+  background-color: #af8f6f;
   border-radius: 5px;
 }
 
@@ -183,7 +172,7 @@ header ul li {
     color: white;
   }
   100% {
-    color: #20a58a;
+    color: #af8f6f;
   }
 }
 
@@ -193,7 +182,7 @@ header ul li {
 }
 .contact-text h2 {
   font-size: 2rem;
-  color: #69e46d;
+  color: #543310;
   text-shadow: 4px 2px 2px black;
 }
 
@@ -217,12 +206,12 @@ header ul li {
   color: white;
   margin: 0 2rem;
   padding: 1.5rem 4rem;
-  border: 4px solid #69e46d;
+  border: 4px solid #74512d;
   border-radius: 35px;
   background: linear-gradient(
     to right,
-    #69e46d 0%,
-    #69e46d 50%,
+    #af8f6f 0%,
+    #74512d 50%,
     rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 0.3) 100%
   );
@@ -246,7 +235,7 @@ header ul li {
 .description {
   padding: 7rem 10rem;
   background: transparent;
-  color: white;
+  color: #543310;
   text-align: center;
   h1 {
     font-size: 3rem;
@@ -298,8 +287,8 @@ header ul li {
 }
 
 .industries-item a:hover {
-  background-color: #69e46d;
-  border-color: #69e46d;
+  background-color: #74512d;
+  border-color: #74512d;
   color: black;
   transition: 0.5s;
 }
@@ -330,13 +319,12 @@ header ul li {
   cursor: pointer;
   font-weight: 400;
   padding: 1rem 3rem;
-  border: 3px solid #69e46d;
-  border-radius: 15px;
-  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
+  border: 4px solid #74512d;
+  border-radius: 35px;
   background: linear-gradient(
     to right,
-    #69e46d 0%,
-    #69e46d 50%,
+    #af8f6f 0%,
+    #74512d 50%,
     rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 0.3) 100%
   );
@@ -362,8 +350,16 @@ header ul li {
 
 .choose-us h1 {
   text-align: center;
-  color: white;
+  color: #543310;
   font-size: 3rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 5px solid #AF8F6F;
+  text-shadow: 2px 1px 1px rgba(0,0,0,0.7);
+}
+
+.choose-us h1 span{
+  color: #AF8F6F;
+  text-shadow: 2px 1px 1px rgba(0,0,0,0.7);
 }
 
 .abt-grid {
@@ -392,14 +388,15 @@ header ul li {
 }
 
 .abt-item span {
-  color: #3e8e41;
-  font-weight: 500;
+  color: #AF8F6F;
+  font-weight: 700;
   font-size: 1.75rem;
+  text-shadow: 1px 1px 1px black;
   text-transform: uppercase;
 }
 
 .abt-text {
-  background: linear-gradient(#69e46d, #69e46d) left no-repeat, white;
+  background: linear-gradient(#543310, #543310) left no-repeat, rgba(0,0,0,0.7);
   background-size: 0% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -435,7 +432,7 @@ header ul li {
 
 .customers,
 .employees {
-  color: white;
+  color: #543310;
   padding: 5rem 2rem;
   background: transparent;
 }
@@ -443,7 +440,9 @@ header ul li {
 .customers h1,
 .employees h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 1px 1px rgba(0,0,0,0.7);
   padding-bottom: 3rem;
 }
 
@@ -462,7 +461,8 @@ header ul li {
 }
 
 .customer-card i {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .card-text {
@@ -476,18 +476,20 @@ header ul li {
 .customer-card p {
   margin-top: 0.5rem;
   text-transform: uppercase;
-  color: #69e46d;
+  color: #AF8F6F;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   font-weight: 600;
 }
 
 .prev,
 .next {
-  color: #69e46d;
+  color: #AF8F6F;
   cursor: pointer;
   position: absolute;
   width: auto;
   text-shadow: 4px 2px 2px black;
-  font-size: 4rem;
+  font-size: 6rem;
   margin-top: -15rem;
 }
 
@@ -554,18 +556,18 @@ select {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #69e46d;
+  background-color: #543310;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
 .form-btn:hover {
-  background-color: #69e46d;
+  background-color: #543310;
 }
 
 .form-btn:active {
-  background-color: #69e46d;
+  background-color: #543310;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -574,7 +576,7 @@ select {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   padding: 4rem 10rem;
   color: white;
-  border-top: 1px solid white;
+  border-top: 4px solid #AF8F6F;
   p {
     margin: 0;
   }
@@ -613,7 +615,7 @@ select {
 .contact-socials p,
 #homepage-link {
   font-size: 2.5rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #AF8F6F;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
