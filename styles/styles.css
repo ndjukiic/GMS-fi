@@ -2,7 +2,7 @@ body {
   font-family: "Teachers", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f4e1;
+  background-color: #D3D3D3;
 }
 
 ul {
@@ -129,7 +129,7 @@ header ul li:hover {
 }
 
 .dropdown-content a:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
 }
 
@@ -206,6 +206,7 @@ header ul li:hover {
   margin: 2rem auto;
   display: flex;
 }
+
 .contact-text h2 {
   font-size: 2rem;
   color: #ffdb58;
@@ -228,12 +229,12 @@ header ul li:hover {
   color: white;
   margin: 0 2rem;
   padding: 1.5rem 4rem;
-  border: 4px solid #74512d;
+  border: 4px solid #50C878;
   border-radius: 35px;
   background: linear-gradient(
     to right,
-    #af8f6f 0%,
-    #74512d 50%,
+    #0cc74d 0%,
+    #75ca91 50%,
     rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 0.3) 100%
   );
@@ -244,7 +245,7 @@ header ul li:hover {
 
 .contact-btns h3:hover {
   background-position: 0 0;
-  color: black;
+  color: white;
   transition: 0.3s;
 }
 
@@ -257,7 +258,7 @@ header ul li:hover {
 .description {
   padding: 7rem 10rem;
   background: transparent;
-  color: #543310;
+  color: #004080;
   text-align: center;
   h1 {
     font-size: 3rem;
@@ -301,9 +302,10 @@ header ul li:hover {
 }
 
 .industries-item a:hover {
-  background-color: #74512d;
-  border-color: #74512d;
-  color: black;
+  background-color: transparent;
+  border-color: #50C878;
+  color: white;
+  font-weight: 700; 
   transition: 0.5s;
 }
 
@@ -334,12 +336,12 @@ header ul li:hover {
   cursor: pointer;
   font-weight: 400;
   padding: 1rem 3rem;
-  border: 4px solid #74512d;
+  border: 4px solid #50C878;
   border-radius: 35px;
   background: linear-gradient(
     to right,
-    #af8f6f 0%,
-    #74512d 50%,
+    #0cc74d 0%,
+    #75ca91 50%,
     rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 0.3) 100%
   );
@@ -349,7 +351,7 @@ header ul li:hover {
 }
 .img-cnt-btn:hover {
   background-position: 0 0;
-  color: black;
+  color: white;
   transition: 0.3s;
 }
 
@@ -365,15 +367,15 @@ header ul li:hover {
 
 .choose-us h1 {
   text-align: center;
-  color: #543310;
+  color: #004080;
   font-size: 3rem;
   padding-bottom: 1.25rem;
-  border-bottom: 5px solid #af8f6f;
+  border-bottom: 5px solid #004080;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 .choose-us h1 span {
-  color: #af8f6f;
+  color: #036eda;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -403,7 +405,7 @@ header ul li:hover {
 }
 
 .abt-item span {
-  color: #af8f6f;
+  color: #004080;
   font-weight: 700;
   font-size: 1.75rem;
   text-shadow: 1px 1px 1px black;
@@ -411,7 +413,7 @@ header ul li:hover {
 }
 
 .abt-text {
-  background: linear-gradient(#543310, #543310) left no-repeat,
+  background: linear-gradient(#333333, #333333) left no-repeat,
     rgba(0, 0, 0, 0.7);
   background-size: 0% 100%;
   background-clip: text;
@@ -448,7 +450,7 @@ header ul li:hover {
 
 .customers,
 .employees {
-  color: #543310;
+  color: #004080;
   padding: 5rem 2rem;
   background: transparent;
 }
@@ -492,7 +494,7 @@ header ul li:hover {
 .customer-card p {
   margin-top: 0.5rem;
   text-transform: uppercase;
-  color: #af8f6f;
+  color: #50C878;
   font-size: 1.25rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   font-weight: 600;
@@ -500,7 +502,7 @@ header ul li:hover {
 
 .prev,
 .next {
-  color: #af8f6f;
+  color: #50C878;
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -572,18 +574,18 @@ select {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #543310;
+  background-color: #50C878;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
 .form-btn:hover {
-  background-color: #543310;
+  background-color: #50C878;
 }
 
 .form-btn:active {
-  background-color: #543310;
+  background-color: #50C878;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -592,7 +594,7 @@ select {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   padding: 4rem 10rem;
   color: white;
-  border-top: 4px solid #af8f6f;
+  border-top: 4px solid #50C878;
   p {
     margin: 0;
   }
@@ -631,7 +633,7 @@ select {
 .contact-socials p,
 #homepage-link {
   font-size: 2.5rem;
-  border-bottom: 1px solid #af8f6f;
+  border-bottom: 1px solid #50C878;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
