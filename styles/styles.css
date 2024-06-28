@@ -2,7 +2,7 @@ body {
   font-family: "Teachers", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
 }
 
 ul {
@@ -216,7 +216,7 @@ header ul li:hover {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.25rem;
-  background-color: #FFDB58;
+  background-color: #ffdb58;
   color: black;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -229,7 +229,7 @@ header ul li:hover {
   color: white;
   margin: 0 2rem;
   padding: 1.5rem 4rem;
-  border: 4px solid #50C878;
+  border: 4px solid #50c878;
   border-radius: 35px;
   background: linear-gradient(
     to right,
@@ -303,9 +303,9 @@ header ul li:hover {
 
 .industries-item a:hover {
   background-color: transparent;
-  border-color: #50C878;
+  border-color: #50c878;
   color: white;
-  font-weight: 700; 
+  font-weight: 700;
   transition: 0.5s;
 }
 
@@ -336,7 +336,7 @@ header ul li:hover {
   cursor: pointer;
   font-weight: 400;
   padding: 1rem 3rem;
-  border: 4px solid #50C878;
+  border: 4px solid #50c878;
   border-radius: 35px;
   background: linear-gradient(
     to right,
@@ -495,7 +495,7 @@ header ul li:hover {
 .customer-card p {
   margin-top: 0.5rem;
   text-transform: uppercase;
-  color: #50C878;
+  color: #50c878;
   font-size: 1.25rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   font-weight: 600;
@@ -503,7 +503,7 @@ header ul li:hover {
 
 .prev,
 .next {
-  color: #50C878;
+  color: #50c878;
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -595,7 +595,7 @@ select {
   background: linear-gradient(to right, rgb(30, 30, 30), rgb(0, 0, 0));
   padding: 4rem 10rem;
   color: white;
-  border-top: 4px solid #50C878;
+  border-top: 4px solid #50c878;
   p {
     margin: 0;
   }
@@ -634,7 +634,7 @@ select {
 .contact-socials p,
 #homepage-link {
   font-size: 2.5rem;
-  border-bottom: 1px solid #50C878;
+  border-bottom: 1px solid #50c878;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
@@ -697,8 +697,8 @@ select {
   padding: 2rem 10rem;
   border-radius: 25px;
   background-color: #ff7f5093;
-  border: 1px solid #FFDB58;
-  box-shadow: 0px 0px 0px 3px #FFDB58;
+  border: 1px solid #ffdb58;
+  box-shadow: 0px 0px 0px 3px #ffdb58;
   transition: 1s;
   color: black;
   display: flex;
@@ -709,7 +709,7 @@ select {
 }
 
 .review-flex:hover {
-  box-shadow: 0px 0px 0px 13px #FFDB58;
+  box-shadow: 0px 0px 0px 13px #ffdb58;
 }
 
 .review-text {
@@ -777,7 +777,7 @@ select {
   padding: 4rem;
   box-shadow: 4px 2px 2px black;
   background-color: #ff7f5093;
-  border: 4px solid #FFDB58;
+  border: 4px solid #ffdb58;
   color: #74512d;
   border-radius: 15px;
   margin: 1.5rem auto;
@@ -866,7 +866,7 @@ select {
 .we-provide,
 .employee-search {
   background: inherit;
-  color: inherit;
+  color: #004080;
   padding: 5rem 10rem;
 }
 
