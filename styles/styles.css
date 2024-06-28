@@ -209,19 +209,19 @@ header ul li:hover {
 
 .contact-text h2 {
   font-size: 2rem;
-  color: #ffdb58;
-  text-shadow: 2px 1px 1px black;
+  color: inherit;
 }
 
 .contact-text a {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.25rem;
-  background-color: #543310;
-  color: #f8f4e1;
+  background-color: #FFDB58;
+  color: black;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: 0.25s;
+  box-shadow: 2px 2px 1px black;
 }
 
 .contact-btns h3 {
@@ -444,7 +444,7 @@ header ul li:hover {
 }
 
 .reviews {
-  background-color: rgb(20, 20, 20);
+  background-color: inherit;
   text-align: center;
 }
 
@@ -457,6 +457,7 @@ header ul li:hover {
 
 .customers h1,
 .employees h1 {
+  color: inherit;
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
@@ -574,18 +575,18 @@ select {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #50C878;
+  background-color: #004080;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
 .form-btn:hover {
-  background-color: #50C878;
+  background-color: #004080;
 }
 
 .form-btn:active {
-  background-color: #50C878;
+  background-color: #004080;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -645,8 +646,8 @@ select {
 /* apply page */
 
 .abt-employer {
-  background-color: #f8f4e1;
-  color: #543310;
+  background-color: inherit;
+  color: #004080;
   padding: 5rem 15rem;
 }
 
@@ -655,7 +656,7 @@ select {
   text-align: center;
   padding: 4rem 0 1.5rem 0;
   font-size: 3rem;
-  border-bottom: 2px solid #543310;
+  border-bottom: 2px solid #0cc74d;
 }
 
 .abt-grid {
@@ -684,7 +685,7 @@ select {
 .reviews h1 {
   margin: 0;
   padding-top: 4rem;
-  color: #543310;
+  color: #004080;
   font-size: 3rem;
 }
 
@@ -695,11 +696,11 @@ select {
 .review-flex {
   padding: 2rem 10rem;
   border-radius: 25px;
-  background-color: #af8f6f;
-  border: 1px solid #74512d;
-  box-shadow: 0px 0px 0px 3px #74512d;
+  background-color: #ff7f5093;
+  border: 1px solid #FFDB58;
+  box-shadow: 0px 0px 0px 3px #FFDB58;
   transition: 1s;
-  color: #f8f4e1;
+  color: black;
   display: flex;
   flex-direction: row;
   img {
@@ -708,7 +709,7 @@ select {
 }
 
 .review-flex:hover {
-  box-shadow: 0px 0px 0px 13px #74512d;
+  box-shadow: 0px 0px 0px 13px #FFDB58;
 }
 
 .review-text {
@@ -721,7 +722,7 @@ select {
 }
 
 .review-text h2 {
-  color: #543310;
+  color: #004080;
 }
 
 /* references */
@@ -747,7 +748,7 @@ select {
 
 .text-section {
   background: inherit;
-  color: inherit;
+  color: #004080;
   padding: 5rem 15rem;
   font-weight: 600;
   font-size: 1.5rem;
@@ -757,9 +758,9 @@ select {
 .recruitment-contact,
 .finance-contact,
 .management-contact {
-  background-color: #f8f4e1;
+  background-color: inherit;
   padding: 5rem 15rem;
-  color: #543310;
+  color: #004080;
 }
 
 .contact-flexbox {
@@ -775,8 +776,8 @@ select {
   align-items: center;
   padding: 4rem;
   box-shadow: 4px 2px 2px black;
-  background-color: rgba(175, 143, 111, 0.8);
-  border: 4px solid #856c54;
+  background-color: #ff7f5093;
+  border: 4px solid #FFDB58;
   color: #74512d;
   border-radius: 15px;
   margin: 1.5rem auto;
@@ -941,7 +942,7 @@ select {
 .wanna-contact {
   margin: 13rem 0;
   padding: 0 20rem;
-  color: #543310;
+  color: #004080;
 }
 
 .who-are-we h1,
@@ -950,7 +951,7 @@ select {
 .wanna-contact h1 {
   text-align: center;
   font-size: 5rem;
-  text-shadow: 2px 1px 1px black;
+  text-shadow: 4px 1px 1px black;
 }
 
 .wanna-contact h2 {
